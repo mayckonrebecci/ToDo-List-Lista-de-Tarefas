@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body oninput="buttonPlusWork()">
+    <header>
+        <h1>TODO LIST</h1>
+        <h4>LISTA DE TAREFAS</h4>
+    </header>
+    
+    <section id="dock">
+        <article id="container">
+
+            <div id="item">
+                <input type="text" name="toDoInput" id="todoInput" placeholder="INSIRA UM VALOR" required>
+                <button class="buttonPlus" onclick="addItem()"><span class="material-icons">add</span></button>
+            </div>
+
+
+
+            <!-- <div class="createdItem">
+                <div>
+                    <p></p>
+                </div>
+                <div class="createdButton">
+                    <button class="buttonPlus"><i class="bi bi-check2"></i></button>
+                    <button class="buttonPlus"><i class="bi bi-eraser-fill"></i></button>
+                </div>
+            </div> -->
+            
+        </article>
+    </section>
+
+    <!-- <footer id="footer">
+        <section>
+            <article class="links">
+                <a href="https://www.github.com/mayckonrebecci/" target="_blank"><i class="bi bi-github"></i> Github</a>
+                <a href="https://www.linkedin.com/in/mayckonrebecci/" target="_blank"><i class="bi bi-linkedin"></i>
+                    Linkedin</a>
+                <a href="https://www.twitter.com/mayckonrebecci/" target="_blank"><i class="bi bi-twitter"></i>
+                    Twitter</a>
+            </article>
+        </section>
+
+        <p>&copy;Copyright 2021 - Mayckon Rebecci</p>
+    </footer> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
