@@ -20,7 +20,6 @@ html {
 }
 
 body {
-    
 	background: linear-gradient(229deg, 
     #833ab4 0%, 
     #3540d6 27%, 
@@ -45,12 +44,14 @@ header {
 
 #container {
 	padding: 0.625rem;
-	height: 25rem;
 	width: 60%;
 	border-radius: 0.625rem;
 	color: var(--myBlack);
+    /* background-color: var(--myWhite); */
 	text-align: left;
+	margin-bottom: 13.125rem;
 }
+
 
 #item {
 	width: 70%;
@@ -72,7 +73,7 @@ header {
 
 #item .buttonPlus {
 	border-radius: 50%;
-	color: var(--myWhite);
+	color: var(--myWhite);  
 	justify-self: right;
 	align-self: center;
 	transition: 300ms;
@@ -83,7 +84,10 @@ header {
 	background-color: #3a45d79c !important;
 }
 #item .buttonPlus span {
-	font-size: 1.25rem;
+    display: grid;
+	justify-self: center;
+	align-self: center;
+	font-size: 1.25rem; 
 	font-weight: bolder;
 	padding: 0.125rem;
 }
@@ -102,8 +106,8 @@ header {
 }
 
 .createdItem:last-child {
-	/* margin-bottom: 1.875rem; */
-	margin-bottom: 15rem;
+	margin-bottom: 1.875rem;
+	/* margin-bottom: 15rem; */
 }
 
 .createdItem div:first-child {
@@ -186,13 +190,16 @@ section .links a:hover {
 }
 
 #footer {
-	position: absolute;
-	bottom: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
 	width: 100%;
-	border-top: solid 0.0625rem #59287a;
 	line-height: 6.25rem;
 	text-align: center;
 	color: var(--myWhite);
 	font-weight: bolder;
-	background-color: var(--navBGColor);
+	background: linear-gradient(229deg, 
+    #833ab4 0%, 
+    #3540d6 27%, 
+    #bbbfff 100%);
 }

@@ -8,7 +8,6 @@ const createErroP = document.createElement("p");
 
 // Coloca a cor do background do body no botão do ToDo Input
 const getBodyColor = getComputedStyle(document.body);
-const bodyBGColor = getBodyColor.backgroundColor;
 
 buttonPlus.style.backgroundColor = "#777";
 
@@ -21,7 +20,7 @@ function buttonPlusWork() {
         buttonPlus.style.backgroundColor = "#777";
 	} else {        
 		buttonPlus.style.cursor = "pointer";
-		buttonPlus.style.backgroundColor = bodyBGColor;        
+		buttonPlus.style.backgroundColor = "#5c67ff";        
 	}
 }
 
