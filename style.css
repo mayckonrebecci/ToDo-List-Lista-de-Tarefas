@@ -59,7 +59,7 @@ header {
 	display: grid;
 	grid-template-columns: 5fr 1fr;
 	background-color: white;
-	padding: 0.3125rem;
+	padding: 0.3125rem 0.625rem;
 	border: solid 0.0625rem #833ab43d;
 	border-radius: 0.3125rem;
 }
@@ -99,7 +99,7 @@ header {
 	display: grid;
 	grid-template-columns: 6fr 1fr;
 	background-color: white;
-	padding: 0.3125rem;
+	padding: 0.3125rem 0.625rem;
 	border: solid 0.0625rem #833ab43d;
 	border-radius: 0.3125rem;
 	background-color: #e4e4e4;
@@ -107,27 +107,31 @@ header {
 
 .createdItem:last-child {
 	margin-bottom: 1.875rem;
-	/* margin-bottom: 15rem; */
 }
 
 .createdItem div:first-child {
-	width: 90%;
+	width: 100%;
 }
 
 .createdItem p {
-	padding-left: 0.3125rem;
+    padding-right: 2rem;
 	line-height: 2.1875rem;
 	font-size: 1rem;
 	font-weight: 600;
 	color: var(--myBlackGrey);
 }
 
-.createdItem .createdButton {
-	text-align: right;
+.createdItem .checkSymbol {
+    padding: 0 0.5rem;
 }
 
-.createdButton {
-	width: 100%;
+
+.createdItem .createdButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+	width: 100px;
 }
 
 .createdItem .buttonPlus {
@@ -155,10 +159,20 @@ header {
 }
 
 /* FOOTER */
-section .links {
+#footer {
+    bottom: 0;
+    position: fixed;
 	width: 100%;
 	line-height: 6.25rem;
-	text-align: center;
+	color: var(--myWhite);
+	font-weight: bolder;
+	background: linear-gradient(229deg, 
+    #833ab4 0%, 
+    #3540d6 27%, 
+    #bbbfff 100%);
+}
+
+section .links {
 	background-color: var(--secondaryColor);
 	color: var(--myWhite);
 	font-weight: bolder;
@@ -167,39 +181,12 @@ section .links {
 
 section .links a {
 	color: var(--myBlack);
+	padding: 0 1.25rem;
+	font-size: 1.125rem;
+	transition: 700ms;
 }
 
 section .links a:hover {
 	color: #5e5e5e;
 }
 
-.links {
-	text-align: center;
-}
-
-.links a {
-	color: var(--myWhite);
-	padding: 0 1.25rem;
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-	transition: 700ms;
-}
-
-.links a:hover {
-	color: var(--secondaryColor);
-}
-
-#footer {
-    bottom: 0;
-    left: 0;
-    position: fixed;
-	width: 100%;
-	line-height: 6.25rem;
-	text-align: center;
-	color: var(--myWhite);
-	font-weight: bolder;
-	background: linear-gradient(229deg, 
-    #833ab4 0%, 
-    #3540d6 27%, 
-    #bbbfff 100%);
-}

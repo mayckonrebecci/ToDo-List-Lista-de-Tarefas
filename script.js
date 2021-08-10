@@ -25,7 +25,7 @@ function buttonPlusWork() {
 }
 
 // Faz o botão de ENTER funcionar no input
-input.addEventListener("keyup", function(event) {
+input.addEventListener("keypress", function(event) {
     if(event.keyCode === 13) {
         buttonPlus.click();
     }
@@ -50,9 +50,11 @@ function addItem() {
 		/* 
             Cria uma 'div', depois cria um 'p' e coloca dentro da div#createdItem
             div#createdItem > div > p 
+            setAttribute é uma forma melhorada do classList.
         */
 		const createDiv = document.createElement("div");
         const createPComp = document.createElement("p");
+        createPComp.setAttribute("class", "checkSymbol");
 		const createP = document.createElement("p");    
 		createP.innerText = array[array.length - 1];
 
